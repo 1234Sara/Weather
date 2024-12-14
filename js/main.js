@@ -14,11 +14,7 @@ async function weather(city) {
     weather(searchInput.value)
   
   })
-  searchInput.addEventListener('input',function(){
-    weather(searchInput.value)
   
-  })
-
   submitInput.addEventListener('click',function(){
     weather(searchInput.value)
   })
