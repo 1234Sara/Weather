@@ -22,7 +22,7 @@ async function getWeather(city) {
   })
 
   submitInput.addEventListener('click',function(){
-    weather(searchInput.value)
+    getWeather(searchInput.value)
   })
   
 
