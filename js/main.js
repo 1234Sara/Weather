@@ -16,13 +16,29 @@ async function getWeather(city) {
     }
 }
   
+
+async function weather(city) {
+    try {
+        const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=73cedcc1e160449c9ef214022241212&q=${city}&days=3`);
+        const result = await response.json();
+
+        console.log(result);
+
+        display(result.forecast.forecastday , result.location.name , result.location.country)
+
+    } catch (error) {
+        console.error("Error fetching weather data:", error);
+    }
+  }
+
+
   searchInput.addEventListener('input',function(){
-    getWeather(searchInput.value)
+    weather(searchInput.value)
   
   })
 
   submitInput.addEventListener('click',function(){
-    getWeather(searchInput.value)
+    weather(searchInput.value)
   })
   
 
