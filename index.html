@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="shortcut icon" href="./imgs/banner.png" type="images/x.icon">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                     <a class="navbar-brand navbar-dark d-flex" href="#">
+                    <img src="./imgs/logo@2x.png" alt="weather" class="px-3 logo">
+                    <div>
+                        <h1 class="weather"> Weather </h1>
+                        <small class="tagline">tagline goes here</small>    
+                    </div>
+                    </a>
+                  <span class="navbar-toggler bar-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars three-lines"></i>
+                  </span>
+                  <div class="collapse navbar-collapse menubar" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mx-5 navbar-dark">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Live cameras</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Photos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                      </li>
+                  </div>
+                </div>
+              </nav>
+        </header>
+
+      <main>
+        <section>
+            <div class="url">
+                <div class="container my-4">
+                        <form class="find-location d-flex align-items-center position-relative">
+                            <input type="text" placeholder="Find your location..." id="search" class="location main-color">
+                            <input type="button" value="Find" id="submit" class="position-absolute find">
+                        </form>    
+                </div>     
+                
+           <div class="container my-5">
+            <div class="row weather2" id="demo">
+                <!-- <div class="col-md-12 col-lg-4">
+                    <div class="overlay">
+                        <div class="d-flex justify-content-between day">
+                            <p>Wednesday</p>
+                            <p>11 December</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="my-4 mx-3">Cairo</p>
+                    </div>
+                    <div class="d-flex degree px-4">
+                        <p>18.8</p>
+                        <p class="deg">o</p>
+                        <p>C</p>
+                    </div>
+                    <img src="./imgs/113.png" alt="sunny" class="w-25 mx-4">
+                    <p class="mx-4 cloud">Partly cloudy</p>
+                    <div class="py-4 px-4">
+                        <span class="px-2">
+                            <img src="./imgs/icon-umberella@2x.png" alt="icon-umbrella" width="25">
+                            20%
+                        </span>
+                        <span class="px-2">
+                            <img src="./imgs/icon-wind@2x.png" alt="icon-wind" width="25">
+                            18km/h
+                        </span>
+                        <span class="px-2">
+                            <img src="./imgs/icon-compass@2x.png" alt="icon-compass" width="25">
+                            East
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4 weather3">
+                    <div class="overlay">
+                        <div class="d-flex justify-content-center day">
+                            <p>Thursday</p>
+                        </div>
+                    </div>
+                    <div class="text-center thursday">
+                        <img src="./imgs/116.png" alt="sunny" class="py-4">
+                        <div class="d-flex justify-content-center degree2">
+                            <p>23.7</p>
+                            <p class="deg2">o</p>
+                            <p>C</p> 
+                        </div>
+                        <div class="d-flex justify-content-center degree3">
+                            <p>15.4</p>
+                            <p class="deg3">o</p>
+                        </div>
+                        <p class="cloud py-3">Partly Cloudy</p>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-lg-4 weather2">
+                    <div class="overlay">
+                        <div class="d-flex justify-content-center day">
+                            <p>Friday</p>
+                        </div>
+                    </div>
+                    <div class="text-center thursday">
+                        <img src="./imgs/116.png" alt="sunny" class="py-4">
+                        <div class="d-flex justify-content-center degree2">
+                            <p>23.1</p>
+                            <p class="deg2">o</p>
+                            <p>C</p> 
+                        </div>
+                        <div class="d-flex justify-content-center degree3">
+                            <p>14</p>
+                            <p class="deg3">o</p>
+                        </div>
+                        <p class="cloud py-3">Sunny</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div> 
+        </section>   
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-md-12 col-lg-8">
+                    <div>
+                        <form class="find-location d-flex align-items-center position-relative">
+                            <input type="text" placeholder="Enter your email to subscribe..." id="search" class="location">
+                            <input type="submit" value="Subscribe" id="submit" class="position-absolute subscribe">
+                        </form>    
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                <div>
+                    <div class="social-links">
+                        <ul class="d-flex gap-1 list-unstyled">
+                            <li class="rounded-circle">
+                                <a href="#"><i class="fa-brands fa-facebook-f mx-2"></i></a>
+                            </li>
+                            <li class="rounded-circle">
+                                <a href="#"><i class="fa-brands fa-twitter mx-2"></i></a>
+                            </li>
+                            <li class="rounded-circle">
+                                <a href="#"><i class="fa-brands fa-google-plus mx-2"></i></a>
+                            </li>
+                            <li class="rounded-circle">
+                                <a href="#"><i class="fa-brands fa-pinterest mx-2"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="para my-4">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+      </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
+
+
+
