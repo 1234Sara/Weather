@@ -1,17 +1,23 @@
 var searchInput = document.getElementById('search');
 var submitInput = document.getElementById('submit');
 
-
-async function weather(city) {
-    var res = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=6bed176b6a17406c842135007241112&q=${city}&days=3`);
-    var result = await res.json();
-    console.log(result);
-    display(result.forecast.forecastday , result.location.name , result.location.country)
-  }
   
+async function getWeather(city) {
+    try {
+        const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=73cedcc1e160449c9ef214022241212&q=${city}&days=3`);
+        const result = await response.json();
+
+        console.log(result);
+
+        display(result.forecast.forecastday , result.location.name , result.location.country)
+
+    } catch (error) {
+        console.error("Error fetching weather data:", error);
+    }
+}
   
   searchInput.addEventListener('input',function(){
-    weather(searchInput.value)
+    getWeather(searchInput.value)
   
   })
 
